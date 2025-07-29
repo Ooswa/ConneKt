@@ -100,7 +100,7 @@ class _DonationDetailsScreenState extends State<DonationDetailsScreen> {
       final int amountInPaisa = (enteredAmount * 100).toInt();
 
       final response = await http.post(
-        Uri.parse('http://192.168.18.150:4242/create-payment-intent'),
+        Uri.parse('http://YOUR_IP:4242/create-payment-intent'),
         headers: {'Content-Type': 'application/json'},
         body: jsonEncode({'amount': amountInPaisa}),
       );
