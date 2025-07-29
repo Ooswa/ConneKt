@@ -5,7 +5,7 @@ const cors = require('cors');
 const app = express();
 
 // ✅ DIRECTLY using your actual Stripe secret key here
-const stripe = Stripe('sk_test_51RPejV2U8RTuvVXH935i4eo2IexZzme4MZ8SC8DIwlmnzYn0u2HD9MkhJuIeDeLourfjjNMEUY3Wn1pjLQPWoX1U00CS2yfR1W');
+const stripe = Stripe('YOUR_KEY');
 
 app.use(cors());
 app.use(express.json());
